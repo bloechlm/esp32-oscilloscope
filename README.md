@@ -20,6 +20,6 @@ No firmware is included yet. Send WebSocket text frames in the following format 
 
 ## GitHub Pages and direct Wi-Fi
 
-Enable Pages with GitHub Actions and push to `main`; the included workflow deploys the static UI. GitHub Pages uses HTTPS and browsers may block connections to local `ws://` endpoints. For reliable offline direct Wi-Fi, serve these same three frontend files from the ESP32 access point over HTTP and use `ws://192.168.4.1/ws`. Loading a Pages URL requires internet access; an isolated ESP32 AP does not supply that. Alternatively use an accessible WSS endpoint with a trusted certificate.
+Pages is configured to deploy from `main`, directory `/ (root)`. Push frontend changes to `main` to update the site. Live UI: https://bloechlm.github.io/esp32-oscilloscope/ GitHub Pages uses HTTPS and browsers may block connections to local `ws://` endpoints. For reliable offline direct Wi-Fi, serve these same three frontend files from the ESP32 access point over HTTP and use `ws://192.168.4.1/ws`. Loading a Pages URL requires internet access; an isolated ESP32 AP does not supply that. Alternatively use an accessible WSS endpoint with a trusted certificate.
 
 The frontend needs appropriate ESP32 firmware and a protected analog input circuit before measuring actual signals. Fonts use Google Fonts with a local sans-serif fallback.
